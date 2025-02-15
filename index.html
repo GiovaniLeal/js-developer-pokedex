@@ -18,14 +18,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
 
     <!-- Nosso CSS -->
-    <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
 </head>
 
 <body>
-    <section class="content">
-        <h1>Pokedex</h1>
+    <header>
+        <nav class="navHome">
+            <img src="/js-developer-pokedex/assets/img/Pokédex_logo.png" alt="Pokédex Logo" id="pokedex">
+            <ul class="nav-list">
+                <li class="nav-item"><button class="btn btn-header " id="ver-todos">Ver Todos</button></li>
+                <li class="nav-item"><button class="btn btn-header  fire" id="fire">FIRE</button></li>
+                <li class="nav-item"><button class="btn btn-header water" id="water">WATER</button></li>
+                <li class="nav-item"><button class="btn btn-header  grass" id="grass">GRASS</button></li>
+                <li class="nav-item"><button class="btn btn-header  electric" id="electric">ELECTRIC</button></li>
+                <li class="nav-item"><button class="btn btn-header  ice" id="ice">ICE</button></li>
+                <li class="nav-item"><button class="btn btn-header fighting" id="fighting">FIGHTING</button></li>
+                <li class="nav-item"><button class="btn btn-header poison" id="poison">POISON</button></li>
+                <li class="nav-item"><button class="btn btn-header ground" id="ground">GROUND</button></li>
+                <li class="nav-item"><button class="btn btn-header flying" id="flying">FLYING</button></li>
+                <li class="nav-item"><button class="btn btn-header  psychic" id="psychic">PSYCHIC</button></li>
+                <li class="nav-item"><button class="btn btn-header  bug" id="bug">BUG</button></li>
+                <li class="nav-item"><button class="btn btn-header rock" id="rock">ROCK</button></li>
+                <li class="nav-item"><button class="btn btn-header ghost" id="ghost">GHOST</button></li>
+                <li class="nav-item"><button class="btn btn-header dark" id="dark">DARK</button></li>
+                <li class="nav-item"><button class="btn btn-header dragon" id="dragon">DRAGON</button></li>
+                <li class="nav-item"><button class="btn btn-header steel" id="steel">STEEL</button></li>
+                <li class="nav-item"><button class="btn btn-header fairy" id="fairy">FAIRY</button></li>
+                <li class="nav-item"><button class="btn btn-header fairy" id="normal">NORMAL</button></li>
+            </ul>
 
+        </nav>
+        
+            
+        
+    </header>
+    
+    <section class="content">
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
         </ol>
@@ -36,11 +65,17 @@
             </button>
         </div>
     </section>
-
+    
+    <!-- ... modal com detalhes do pokemon ...-->
+     <div class="modal-overlay">
+        <div class="modal"> </div>
+     </div>
+    
     <!-- Nosso JS -->
-    <script src="/assets/js/pokemon-model.js"></script>
-    <script src="/assets/js/poke-api.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
